@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <center><h1>document.getElementById</h1></center>
+    <fieldset>
+        <legend>Math operation</legend>
+        <center>
+            <label for="f_num">First Number</label>
+            <input type="number" name="" id="x" placeholder="enter the first number here" autocomplete="off">
+            <br>
+            <label for="S_num">Second Number</label>
+            <input type="number" name="" id="y" placeholder="enter the second number here" autocomplete="off">
+            <br>
+            <input type="submit" name="" id="z" value="Addition" onclick="f1()" >&nbsp;&nbsp;
+            <input type="submit" name="" id="p" value="Substraction" onclick="f2()" >&nbsp;&nbsp;
+            <input type="submit" name="" id="q" value="mul" onclick="f3()" >&nbsp;&nbsp;
+            <input type="submit" name="" id="r" value="div" onclick="f4()" >
+        </center>
+    </fieldset>
+    <script>
+        function f1()
+        {
+            var x1 = Number(document.getElementById('x').value)
+            var x2 = Number(document.getElementById('y').value)
+            var res = x1+x2
+            document.getElementById('z').value=res
+        }
+        function f2()
+        {
+            var p1 = Number(document.getElementById('x').value)
+            var p2 = Number(document.getElementById('y').value)
+            var res1 = p1-p2
+            document.getElementById('p').value=res1
+        }
+        function f3()
+        {
+            var q1 = Number(document.getElementById('x').value)
+            var q2 = Number(document.getElementById('y').value)
+            var res2 = q1*q2
+            document.getElementById('q').value=res2
+        }
+        function f4()
+        {
+            var r1 = Number(document.getElementById('x').value)
+            var r2 = Number(document.getElementById('y').value)
+            res3 = r1/r2
+            document.getElementById('r').value=res3
+            
+        }
+
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
